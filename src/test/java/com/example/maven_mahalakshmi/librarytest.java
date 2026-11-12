@@ -19,7 +19,7 @@ public class librarytest {
 
         library.Book found = lib.searchBook("B01");
         assertNotNull(found, "Book should be found");
-        assertEquals("Wrong Book Title", found.getTitle()); // Intentional failure for CI demo
+        assertEquals("Clean Code", found.getTitle());
         assertTrue(found.isAvailable(), "New book should be available");
         assertNull(lib.searchBook("B99"), "Unknown ID should return null");
     }
